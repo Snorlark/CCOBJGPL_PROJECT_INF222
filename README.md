@@ -1,6 +1,6 @@
 FEATURES:
 
-•Login pag
+•Login page
   - Sign up
 
 •Home page
