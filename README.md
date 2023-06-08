@@ -1,24 +1,24 @@
 FEATURES:
 
-• **Login page**
+•Login pag
   - Sign up
 
-•** Home page**
+•Home page
   - Products
   - About
   - Instructions
 
-• **Settings page**
+• Settings page
   - User Edit and Logout
   
-• **Product Selection page**
+• Product Selection page
   - funko pop bootleg
   
-• **Checkout page**
+• Checkout page
   - Mode of payment: Online payment or Cash on Delivery
   - Details about the user (name, address, postal code, contact no., email add.)
   - Message
   
-• **Receipt page**
+• Receipt page
   - Receipt
   - Can go back to Home Page
