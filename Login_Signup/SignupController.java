@@ -26,23 +26,22 @@ public class SignupController{
 
     @FXML
     private Label showPasswordLabel;
- 
+    
 
     public void signup (ActionEvent event) throws IOException {    
         
         String username = usernameField.getText();
         String password = passwordField.getText();
         
-        LoginController.username = username; 
-        LoginController.password = password;
-
         if (username.isEmpty() || password.isEmpty()) {
 
-            AlertMaker.showErrorAlert("Sign Up", "Fill out the important fields");
-            
+            AlertMaker.showErrorAlert("Sign Up", "Fill out the important fields");    
         }
         
         else {
+
+            LoginController.username = username; 
+            LoginController.password = password;
         
             AlertMaker.showSuccessfulAlert("Sign Up", "You have been succesfully signed in");
         
@@ -51,10 +50,9 @@ public class SignupController{
             Parent root = loader.load();
             Scene scene = new Scene(root);
             stage.setScene(scene);
-            stage.show();
-            
+            stage.show();      
         }
-                
+
     }
 
     public void showPassword (MouseEvent event) throws IOException {
@@ -62,13 +60,11 @@ public class SignupController{
         String pass = passwordField.getText();
         showPasswordLabel.setText(pass);
         showPasswordLabel.setLayoutY(229);       
-
     }
 
     public void hidePassword (MouseEvent event) throws IOException {
         
         showPasswordLabel.setLayoutY(413);       
-
     }
 
     public void goToLogin(MouseEvent event) throws IOException {
