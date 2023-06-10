@@ -35,9 +35,14 @@ public class LoginController{
         String username1 = usernameField.getText();
         String password1 = passwordField.getText();
 
-        if (username1.isEmpty() || password1.isEmpty()) {
+        if (username1.isEmpty() || password1.isEmpty() ) {
 
             AlertMaker.showErrorAlert("Log in", "Fill out the important fields"); 
+        }
+
+        else if (username == null || password == null) {
+
+            AlertMaker.showErrorAlert("Log in", "Account doesn't exist");
         }
 
         else if (username.equals(username1) && password.equals(password1)) {
@@ -50,6 +55,7 @@ public class LoginController{
             stage.show();
     
         }
+        
         else {
 
             AlertMaker.showErrorAlert("Login Error", "Username/Password is wrong");
