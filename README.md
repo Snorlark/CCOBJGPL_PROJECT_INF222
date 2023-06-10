@@ -3,25 +3,26 @@
 
 **FEATURES:**
 
-• Login page
-  - Sign up
+• Login
+  - Log in page
+  - Sign up page
 
-• Home page
+• Home
   - Products
   - About
   - Instructions
 
-• Settings page
+• Settings
   - User Edit and Logout
   
-• Product Selection page
+• Products
   - funko pop bootleg
   
-• Checkout page
+• Checkout
   - Mode of payment: Online payment or Cash on Delivery
   - Details about the user (name, address, postal code, contact no., email add.)
   - Message
   
-• Receipt page
+• Receipt
   - Receipt
   - Can go back to Home Page
