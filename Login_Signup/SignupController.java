@@ -26,8 +26,7 @@ public class SignupController{
 
     @FXML
     private Label showPasswordLabel;
-    
-
+ 
 
     public void signup (ActionEvent event) throws IOException {    
         
