@@ -1,7 +1,7 @@
-Product Name: Filodroids
+**Product Name: Filodroids**
 
 
-FEATURES:
+**FEATURES:**
 
 • Login page
   - Sign up
