@@ -15,8 +15,9 @@
 • Settings
   - User Edit and Logout
   
-• Products
-  - funko pop bootleg
+• Products Selection
+  - pre-designed filodroids
+  - customization filodroids
   
 • Checkout
   - Mode of payment: Online payment or Cash on Delivery
