@@ -19,7 +19,6 @@ public class AlertMaker {
         alert.setTitle("Error");
         alert.setHeaderText(title);
         alert.setContentText(content);
-
         alert.showAndWait();
     }
 
@@ -35,7 +34,7 @@ public class AlertMaker {
         Alert alert = new Alert(AlertType.CONFIRMATION, content, ButtonType.YES, ButtonType.NO);
         alert.setTitle("Confirmation");
         alert.setHeaderText(title);
-        alert.showAndWait();
+        alert.showAndWait();        
 
         if (alert.getResult() == ButtonType.YES) {
             return true;

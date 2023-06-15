@@ -4,25 +4,113 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login_Signup.SignupController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f3e4d9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login_Signup.SignupController">
    <children>
-      <Label layoutX="246.0" layoutY="97.0" prefHeight="45.0" prefWidth="109.0" text="Sign up">
+      <ImageView fitHeight="243.0" fitWidth="457.0" layoutY="-64.0">
+         <image>
+            <Image url="@images/bandaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="253.0" layoutX="236.0" layoutY="195.0" rotate="17.1">
+         <image>
+            <Image url="@images/filodroid_character1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="243.0" fitWidth="457.0" layoutX="447.0" layoutY="-64.0">
+         <image>
+            <Image url="@images/bandaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="450.0" fitWidth="781.0" layoutX="-247.0" layoutY="121.0">
+         <image>
+            <Image url="@images/jeep.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="265.0" layoutX="-23.0" layoutY="66.0" rotate="-7.1">
+         <image>
+            <Image url="@images/filodroid_character.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="213.0" fitWidth="327.0" layoutX="52.0" layoutY="114.0" rotate="-6.0">
+         <image>
+            <Image url="@images/filodroids_logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#deae49" height="13.0" layoutX="-4.0" layoutY="592.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="909.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#365e89" height="13.0" layoutX="-296.0" layoutY="285.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81362d" height="13.0" layoutX="593.0" layoutY="284.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
+      <ImageView fitHeight="129.0" fitWidth="258.0" layoutX="341.0" layoutY="479.0">
+         <image>
+            <Image url="@images/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="128.0" layoutX="314.0" layoutY="437.0" rotate="-12.7">
+         <image>
+            <Image url="@images/plate.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="380.0" fitWidth="343.0" layoutX="513.0" layoutY="124.0">
+         <image>
+            <Image url="@images/box.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="616.0" layoutY="303.0" onMousePressed="#passwordPop" prefHeight="32.0" prefWidth="149.0" promptText="Password" style="-fx-background-color: #fff7ef;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="usernameField" layoutX="616.0" layoutY="249.0" onMouseClicked="#usernamePop" prefHeight="32.0" prefWidth="149.0" promptText="Username" style="-fx-background-color: #fff7ef;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="656.0" layoutY="368.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #E7CDB3;" text="Sign up" />
+      <Label layoutX="754.0" layoutY="420.0" onMouseClicked="#goToLogin" text="Log in" textFill="RED" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="740.0" layoutY="254.0" opacity="0.5">
+         <image>
+            <Image url="@images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="740.0" layoutY="309.0" opacity="0.5">
+         <image>
+            <Image url="@images/close-eye.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="615.0" layoutY="420.0" text="Have an account already?" textFill="#5e5d5d" />
+      <Label fx:id="showPasswordLabel" layoutX="625.0" layoutY="627.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #fff7ef;">
+         <font>
+            <Font size="13.0" />
          </font>
       </Label>
-      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="226.0" layoutY="225.0" promptText="PASSWORD" />
-      <TextField fx:id="usernameField" alignment="CENTER" layoutX="226.0" layoutY="175.0" promptText="USERNAME" />
-      <Button layoutX="269.0" layoutY="302.0" mnemonicParsing="false" onAction="#signup" text="SIGN UP" />
-      <Label layoutX="456.0" layoutY="35.0" text="SIGN UP">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font></Label>
-      <Label fx:id="goToLogin" layoutX="526.0" layoutY="35.0" onMousePressed="#goToLogin" text="LOG IN" />
-      <Label layoutX="228.0" layoutY="259.0" onMouseExited="#hidePassword" onMousePressed="#showPassword" text="Show Password" />
-      <Label fx:id="showPasswordLabel" alignment="CENTER" layoutX="229.0" layoutY="413.0" prefHeight="17.0" prefWidth="143.0" style="-fx-background-color: white;" />
+      <Rectangle fx:id="openRectangle" arcWidth="5.0" fill="#fff7ef" height="25.0" layoutX="740.0" layoutY="627.0" onMouseExited="#hidePassword" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <ImageView fx:id="openEyes" fitHeight="20.0" fitWidth="20.0" layoutX="740.0" layoutY="627.0" onMouseExited="#hidePassword" opacity="0.5">
+         <image>
+            <Image url="@images/open-eye.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="733.0" layoutY="306.0" onMouseExited="#hidePassword" onMousePressed="#showPassword" prefHeight="26.0" prefWidth="32.0" />
+      <Rectangle fx:id="usernameRectangle" arcWidth="5.0" fill="#fff7ef" height="20.0" layoutX="622.0" layoutY="700.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="61.0" />
+      <Label fx:id="usernameLabel" layoutX="626.0" layoutY="700.0" text="Username" textFill="#908d8d" />
+      <Rectangle fx:id="passwordRectangle" arcWidth="5.0" fill="#fff7ef" height="20.0" layoutX="622.0" layoutY="750.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="61.0" />
+      <Label fx:id="passwordLabel" layoutX="626.0" layoutY="750.0" text="Password" textFill="#908d8d" />
+      <ImageView fitHeight="103.0" fitWidth="218.0" layoutX="583.0" layoutY="146.0">
+         <image>
+            <Image url="@images/sign%20up.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
