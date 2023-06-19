@@ -54,20 +54,26 @@
             <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
          </effect>
          <font>
-            <Font size="13.0" />
+            <Font name="Candara" size="13.0" />
          </font></PasswordField>
       <TextField fx:id="usernameField" layoutX="616.0" layoutY="249.0" onMouseClicked="#usernamePop" prefHeight="32.0" prefWidth="149.0" promptText="Username" style="-fx-background-color: #fff7ef;">
          <effect>
             <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
          </effect>
          <font>
-            <Font size="13.0" />
+            <Font name="Candara" size="13.0" />
          </font></TextField>
-      <Button fx:id="button" layoutX="656.0" layoutY="368.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #E7CDB3;" text="Log in" />
-      <Label layoutX="732.0" layoutY="420.0" onMouseClicked="#goToSignup" text="Sign Up" textFill="RED" />
+      <Button fx:id="button" layoutX="656.0" layoutY="368.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #E7CDB3;" text="Log in">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="732.0" layoutY="420.0" onMouseClicked="#goToSignup" text="Sign Up" textFill="RED" underline="true">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font></Label>
       <Label fx:id="showPasswordLabel" layoutX="625.0" layoutY="627.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #fff7ef;">
          <font>
-            <Font size="13.0" />
+            <Font name="Candara" size="13.0" />
          </font></Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#deae49" height="13.0" layoutX="-4.0" layoutY="592.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="909.0" />
       <ImageView fitHeight="129.0" fitWidth="258.0" layoutX="341.0" layoutY="479.0">
@@ -108,6 +114,9 @@
       <Label fx:id="usernameLabel" layoutX="626.0" layoutY="700.0" text="Username" textFill="#908d8d" />
       <Rectangle fx:id="passwordRectangle" arcWidth="5.0" fill="#fff7ef" height="20.0" layoutX="622.0" layoutY="750.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="61.0" />
       <Label fx:id="passwordLabel" layoutX="626.0" layoutY="750.0" text="Password" textFill="#908d8d" />
-      <Label layoutX="605.0" layoutY="420.0" text="Don't have an account?" textFill="#5e5d5d" />
+      <Label layoutX="605.0" layoutY="420.0" text="Don't have an account?" textFill="#5e5d5d">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font></Label>
    </children>
 </AnchorPane>
