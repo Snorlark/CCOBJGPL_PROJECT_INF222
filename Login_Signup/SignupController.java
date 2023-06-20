@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 
 public class SignupController{
-
+    
     @FXML
     private TextField usernameField;
     
@@ -46,14 +46,12 @@ public class SignupController{
 
     @FXML
     private Rectangle passwordRectangle;
-
-    public static String username;
-    public static String password;
     
+
     public void signup (ActionEvent event) throws IOException {        
         
-        username = usernameField.getText();
-        password = passwordField.getText();
+        String username = usernameField.getText();
+        String password = passwordField.getText();
         
         if (username.isEmpty() || password.isEmpty()) {
 
@@ -65,17 +63,15 @@ public class SignupController{
             LoginController.username = username; 
             LoginController.password = password;
         
-            AlertMaker.showSuccessfulAlert("Sign Up", "Register your important details");
+            AlertMaker.showSuccessfulAlert("Sign Up", "You have been succesfully signed in");
         
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login_Signup/Register.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login_Signup/Login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             stage.setScene(scene);
-            stage.centerOnScreen();
             stage.show();
             
-
         }
 
     }
