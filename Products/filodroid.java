@@ -5,7 +5,7 @@ public class filodroid {
     private String productName;
     private double productPrice;
     private String productImage;
-    private boolean isSelected = false;
+    private boolean productStatus = false;
     private double qty;
 
 
@@ -34,11 +34,11 @@ public class filodroid {
     }
 
     public boolean getProductStatus() {
-        return this.isSelected;
+        return this.productStatus;
     }
 
     public void setProductStatus(boolean status) {
-        this.isSelected = status;
+        this.productStatus = status;
     }
 
     public double getProductQuantity() {

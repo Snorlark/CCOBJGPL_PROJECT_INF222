@@ -76,18 +76,21 @@ public class RegisterController implements Initializable{
         lastName = lastNameField.getText();
         email = emailField.getText();
         contactNo = contactNoField.getText();
-        birthday = birthdayField.toString();
         address = addressField.getText();
 
+        if (birthdayField.getValue() != null) {
+            birthday = birthdayField.getValue().toString();
+        }              
+
         if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || contactNo.isEmpty() 
-            || birthday.isEmpty() || address.isEmpty() || checkBoxField.isSelected() == false) {
+            || birthday == null || address.isEmpty() || checkBoxField.isSelected() == false) {
 
                 AlertMaker.showErrorAlert("Register", "Fill out the important fields");
         }
 
         else {
             
-            AlertMaker.showSuccessfulAlert("Register", "Your account is now created, you can log in now!");
+        AlertMaker.showSuccessfulAlert("Register", "Your account is now created, you can log in now!");
         
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login_Signup/Login.fxml"));

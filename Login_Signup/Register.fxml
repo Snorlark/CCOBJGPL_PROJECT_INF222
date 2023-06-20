@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -79,6 +80,9 @@
          <font>
             <Font name="Candara" size="11.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </CheckBox>
       <Label layoutX="96.0" layoutY="313.0" text="and" textFill="#000000ad">
          <font>
@@ -89,11 +93,17 @@
          <font>
             <Font name="Candara Bold" size="11.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
       <Label layoutX="117.0" layoutY="313.0" onMousePressed="#openPrivacyPolicy" text="Privacy Policy" textFill="RED" underline="true">
          <font>
             <Font name="Candara Bold" size="11.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
       <ImageView fitHeight="228.0" fitWidth="375.0" layoutX="351.0" layoutY="176.0" rotate="-7.1">
          <image>
@@ -104,6 +114,9 @@
          <font>
             <Font name="Candara Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#deae49" height="13.0" layoutX="-4.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
       <ImageView fitHeight="150.0" fitWidth="268.0" layoutX="266.0" layoutY="-41.0">
@@ -126,6 +139,9 @@
          <effect>
             <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
          </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </DatePicker>
       <Rectangle fx:id="black_opacity" arcHeight="5.0" arcWidth="5.0" fill="#00000081" height="411.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="603.0" />
       <AnchorPane fx:id="terms_conditions" layoutX="188.0" layoutY="80.0" onMouseExited="#closeTermsConditions" prefHeight="273.0" prefWidth="219.0" style="-fx-background-color: #fff7ef;" visible="false">
