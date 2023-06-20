@@ -3,6 +3,7 @@ package Home;
 import java.io.IOException;
 
 import Alert.AlertMaker;
+import Products.CartController;
 import Products.ProductController;
 import Settings.SettingsController;
 import javafx.event.ActionEvent;
@@ -65,7 +66,7 @@ public class HomeController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // ============== ITEM 1 ==================//
-        product1.setProductName("Item Name 1");
+        product1.setProductName("Ikdsasd1");
         item1.setText(product1.getProductName());
 
         product1.setProductPrice(250.00);
@@ -112,7 +113,7 @@ public class HomeController implements Initializable {
         Image image4 = new Image(product4.getProductImage());
         img4.setImage(image4);
         
-        // ============== ITEM 4 ==================//
+        // ============== ITEM 5 ==================//
         product5.setProductName("IFUGROID");
         item5.setText(product5.getProductName());
 
@@ -125,11 +126,16 @@ public class HomeController implements Initializable {
     // Goes to Productselect.fxml
     public void gotoProductselect(ActionEvent event) throws IOException {
 
+        HomeController.count = 1;
+
         Parent root = FXMLLoader.load(getClass().getResource("/Products/Products.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+
+        ProductController.count = 1;
+
     }
 
     // Goes to Userprofile.fxml
@@ -150,50 +156,67 @@ public class HomeController implements Initializable {
     // Goes to Cart.fxml
     public void gotoCart(ActionEvent event) throws IOException {
 
+        HomeController.count = 1;
+
         Parent root = FXMLLoader.load(getClass().getResource("/Products/Cart.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+
+        
+        CartController.count = 1;
     }
 
 
-    // public void buy(ActionEvent event) throws IOException {
+    public void buy(ActionEvent event) throws IOException {
 
-    //     AlertMaker.showSimpleAlert("hello", "item added");
+        AlertMaker.showSimpleAlert("Mabuhay!", "your item has been added on your cart. :D");
 
-    //     Button sourceButton = (Button) event.getSource();
+        Button sourceButton = (Button) event.getSource();
 
-    //     // If addtocart button is pressed, set product status to true
-    //     if (sourceButton.equals(p1)) {
-    //         ProductController.product1.setProductStatus(true);
-    //         ProductController.product1.setProductQuantity(1);
-    //        // ProductController.product1.addItem(LoginController.checkoutController.pane1);
-    //     }
+        // If addtocart button is pressed, set product status to true
+        if (sourceButton.equals(p1)) {
+            HomeController.product1.setProductStatus(true);
+            HomeController.product1.setProductQuantity(1);
+           // HomeController.product1.addItem(LoginController.checkoutController.pane1);
+        }
 
-    //     else if (sourceButton == p2) {
-    //         ProductController.product2.setProductStatus(true);
-    //         ProductController.product2.setProductQuantity(1);
-    //        // ProductController.product2.addItem(LoginController.checkoutController.pane2);
-    //     }
+        else if (sourceButton == p2) {
+            HomeController.product2.setProductStatus(true);
+            HomeController.product2.setProductQuantity(1);
+           // HomeController.product2.addItem(LoginController.checkoutController.pane2);
+        }
 
-    //     else if (sourceButton == p3) {
-    //         ProductController.product3.setProductStatus(true);
-    //         ProductController.product3.setProductQuantity(1);
-    //        // ProductController.product3.addItem(LoginController.checkoutController.pane3);
-    //     }
+        else if (sourceButton == p3) {
+            HomeController.product3.setProductStatus(true);
+            HomeController.product3.setProductQuantity(1);
+           // HomeController.product3.addItem(LoginController.checkoutController.pane3);
+        }
 
-    //     else if (sourceButton == p4) {
-    //         ProductController.product4.setProductStatus(true);
-    //         ProductController.product4.setProductQuantity(1);
-    //        // ProductController.product4.addItem(LoginController.checkoutController.pane3);
-    //     }
+        else if (sourceButton == p4) {
+            HomeController.product4.setProductStatus(true);
+            HomeController.product4.setProductQuantity(1);
+           // HomeController.product4.addItem(LoginController.checkoutController.pane3);
+        }
 
-    //     else if (sourceButton == p5) {
-    //         ProductController.product5.setProductStatus(true);
-    //         ProductController.product5.setProductQuantity(1);
-    //        // ProductController.product5.addItem(LoginController.checkoutController.pane3);
-    //     }
+        else if (sourceButton == p5) {
+            HomeController.product5.setProductStatus(true);
+            HomeController.product5.setProductQuantity(1);
+           // HomeController.product5.addItem(LoginController.checkoutController.pane3);
+        }
+    }
+
+    public void showInstruct(ActionEvent event) throws IOException { 
+         AlertMaker.showInstructionsAlert("INSTRUCTIONS", "SCHUCSUCUUSUCHUSUSCH");
+
+    }
+
+    public void showAbout(ActionEvent event) throws IOException { 
+         AlertMaker.showAboutAlert("About us", "haha nababaliw na po");
+
+    }
+
 
     //     // LoginController.cart.showItems();
     // }
@@ -202,28 +225,3 @@ public class HomeController implements Initializable {
 }
 
 
-
-
-        // else if (sourceButton == p6) { di ko nilagay kasi wala naman nito sa home page pero tinype ko kasi gagamitin ko sa product
-        //     ProductController.product6.setProductStatus(true);
-        //     ProductController.product6.setProductQuantity(1);
-        //     ProductController.product6.addItem(LoginController.checkoutController.pane3);
-        // }
-
-        // else if (sourceButton == p7) {
-        //     ProductController.product7.setProductStatus(true);
-        //     ProductController.product7.setProductQuantity(1);
-        //     ProductController.product7.addItem(LoginController.checkoutController.pane3);
-        // }
-
-        // else if (sourceButton == p8) {
-        //     ProductController.product8.setProductStatus(true);
-        //     ProductController.product8.setProductQuantity(1);
-        //     ProductController.product8.addItem(LoginController.checkoutController.pane3);
-        // }
-
-        // else if (sourceButton == p9) {
-        //     ProductController.product9.setProductStatus(true);
-        //     ProductController.product9.setProductQuantity(1);
-        //     ProductController.product9.addItem(LoginController.checkoutController.pane3);
-        // }

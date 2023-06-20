@@ -30,93 +30,16 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-public class ProductController implements Initializable {
+public class ProductViewController implements Initializable {
     @FXML
-    private Label item1;
-    
-    @FXML
-    private Label item2;
-
-    @FXML
-    private Label item3;
-    
-    @FXML
-    private Label item4;
-    
-    @FXML
-    private Label item5;
-    
-    @FXML
-    private Label item6;
-
-    @FXML
-    private Label item7;
-    
-    @FXML
-    private Label item8;
-
-    @FXML
-    private Label item9;
-
-    @FXML
-    private Label price1; 
-
-    @FXML
-    private Label price2; 
-
-    @FXML
-    private Label price3;
-
-    @FXML
-    private Label price4;
-    
-    @FXML
-    private Label price5;
-    
-    @FXML
-    private Label price6;
-    
-    @FXML
-    private Label price7; 
-
-    @FXML
-    private Label price8;
-    
-    @FXML
-    private Label price9;
+    private Label item1, item2, item3, item4, item5, item6, item7, item8, item9,
+                  price1, price2, price3, price4, price5, price6, price7, price8, price9;
     
     @FXML
     ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
 
-    // @FXML  FOR PRODUCT VIEWING
-    // private Button v1, v2, v3, v4, v5, v6, v7, v8, v9;
-
     @FXML
-    private Button p1;
-
-    @FXML
-    private Button p2;
-    
-    @FXML
-    private Button p3; 
-    
-    @FXML
-    private Button p4;
-    
-    @FXML
-    private Button p5;
-    
-    @FXML
-    private Button p6;
-    
-    @FXML
-    private Button p7;
-    
-    @FXML
-    private Button p8;
-    
-    @FXML
-    private Button p9;
+    private Button v1, v2, v3, v4, v5, v6, v7, v8, v9;
 
     // @FXML
     // Button mybutton;
@@ -264,74 +187,62 @@ public class ProductController implements Initializable {
 
     }
 
-    public void buy(ActionEvent event) throws IOException {
-
-        AlertMaker.showSimpleAlert("Mabuhay!", "your item has been added on your cart. :D");
+    public void view (ActionEvent event) throws IOException {
 
         Button sourceButton = (Button) event.getSource();
 
-     // If addtocart button is pressed, set product status to true
-        if (sourceButton.equals(p1)) {
+     // If image/itemname button is pressed, set visibility to true
+         if (sourceButton.equals(v1)) {
+            
             ProductController.product1.setProductStatus(true);
             ProductController.product1.setProductQuantity(1);
            // ProductController.product1.addItem(LoginController.checkoutController.pane1);
         }
 
-        else if (sourceButton == p2) {
+        else if (sourceButton == v2) {
             ProductController.product2.setProductStatus(true);
             ProductController.product2.setProductQuantity(1);
            // ProductController.product2.addItem(LoginController.checkoutController.pane2);
         }
 
-        else if (sourceButton == p3) {
+        else if (sourceButton == v3) {
             ProductController.product3.setProductStatus(true);
             ProductController.product3.setProductQuantity(1);
            // ProductController.product3.addItem(LoginController.checkoutController.pane3);
         }
 
-        else if (sourceButton == p4) {
+        else if (sourceButton == v4) {
             ProductController.product4.setProductStatus(true);
             ProductController.product4.setProductQuantity(1);
            // ProductController.product4.addItem(LoginController.checkoutController.pane3);
         }
 
-        else if (sourceButton == p5) {
+        else if (sourceButton == v5) {
             ProductController.product5.setProductStatus(true);
             ProductController.product5.setProductQuantity(1);
            // ProductController.product5.addItem(LoginController.checkoutController.pane3);
         }
 
-         else if (sourceButton == p6) { 
+         else if (sourceButton == v6) { 
             ProductController.product6.setProductStatus(true);
             ProductController.product6.setProductQuantity(1);
           // ProductController.product6.addItem(LoginController.checkoutController.pane3);
         }
 
-        else if (sourceButton == p7) {
+        else if (sourceButton == v7) {
             ProductController.product7.setProductStatus(true);
             ProductController.product7.setProductQuantity(1);
            // ProductController.product7.addItem(LoginController.checkoutController.pane3);
         }
 
-        else if (sourceButton == p8) {
+        else if (sourceButton == v8) {
             ProductController.product8.setProductStatus(true);
             ProductController.product8.setProductQuantity(1);
            // ProductController.product8.addItem(LoginController.checkoutController.pane3);
         }
 
-        else if (sourceButton == p9) {
-        // // Goes to Customize.fxml
-          //     public void gotoCustomize(ActionEvent event) throws IOException {
-          //     Parent root = FXMLLoader.load(getClass().getResource("/Products/Customize.fxml"));
-          //     Scene scene = new Scene(root);
-          //     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-          //     stage.setScene(scene);
-          //     stage.show();
-          // }
-
-            // ProductController.product9.setProductStatus(true);
-            // ProductController.product9.setProductQuantity(1);
-           // ProductController.product9.addItem(LoginController.checkoutController.pane3);
+        else if (sourceButton == v9) {
+            // goes to customize
         }
     }
 
@@ -358,29 +269,16 @@ public class ProductController implements Initializable {
         
     }
 
-    // Goes to Home.fxml
-    public void gotoHome(ActionEvent event) throws IOException {
+   // Goes to Productselect.fxml
+    public void gotoProductselect(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/Home/Home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/Products.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
 
     }
-
-    // // Goes to ProductView.fxml
-    // public void gotoProductView(ActionEvent event) throws IOException {
-
-    //     Parent root = FXMLLoader.load(getClass().getResource("/Products/ProductView.fxml"));
-    //     Scene scene = new Scene(root);
-    //     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     stage.setScene(scene);
-    //     stage.show();
-
-    // }
-
-    
 
      public void showInstruct(ActionEvent event) throws IOException { 
          AlertMaker.showInstructionsAlert("INSTRUCTIONS", "SCHUCSUCUUSUCHUSUSCH");
