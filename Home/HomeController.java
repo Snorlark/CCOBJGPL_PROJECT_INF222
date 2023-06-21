@@ -48,6 +48,9 @@ public class HomeController implements Initializable {
     @FXML
     private Button p5;
 
+    @FXML  
+    private Button v1, v2, v3, v4, v5;
+
     @FXML
     private Stage stage;
 
@@ -238,6 +241,80 @@ public class HomeController implements Initializable {
             HomeController.product5.setProductStatus(true);
             HomeController.product5.setProductQuantity(1);
            // HomeController.product5.addItem(LoginController.checkoutController.pane3);
+        }
+    }
+
+    public void view(ActionEvent event) throws IOException {
+
+        Button viewButton = (Button) event.getSource();
+
+     // If item/itemname button is pressed, it goes to ProductView.fxml
+        if (viewButton.equals(v1)) {
+
+            ProductController.count = 1;
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View1.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+            View1Controller.count = 1;
+            ProductController.product1.setProductViewStatus(true);
+            //ProductController.product1.addItem(ProductViewController.pane1);
+        }
+
+        else if (viewButton == v2) {
+            
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View2.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+            ProductController.product2.setProductViewStatus(true);
+    
+
+           // ProductController.product2.addItem(LoginController.checkoutController.pane2);
+        }
+
+        else if (viewButton == v3) {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View3.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+            ProductController.product3.setProductViewStatus(true);
+
+           // ProductController.product3.addItem(LoginController.checkoutController.pane3);
+        }
+
+        else if (viewButton == v4) {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View4.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+            ProductController.product4.setProductViewStatus(true);
+
+           // ProductController.product4.addItem(LoginController.checkoutController.pane3);
+        }
+
+        else if (viewButton == v5) {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View5.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+            ProductController.product5.setProductViewStatus(true);
+
+           // ProductController.product5.addItem(LoginController.checkoutController.pane3);
         }
     }
 

@@ -115,5 +115,10 @@
             <Font name="Candara Bold Italic" size="14.0" />
          </font>
       </Label>
+      <Button fx:id="v1" layoutX="57.0" layoutY="418.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="125.0" prefWidth="106.0" text="Button" />
+      <Button fx:id="v2" layoutX="217.0" layoutY="417.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="126.0" prefWidth="113.0" text="Button" />
+      <Button fx:id="v3" layoutX="377.0" layoutY="418.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="126.0" prefWidth="113.0" text="Button" />
+      <Button fx:id="v4" layoutX="538.0" layoutY="418.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="126.0" prefWidth="113.0" text="Button" />
+      <Button fx:id="v5" layoutX="787.0" layoutY="215.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="171.0" prefWidth="154.0" text="Button" />
    </children>
 </AnchorPane>
