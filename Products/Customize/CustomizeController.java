@@ -54,20 +54,20 @@ public class CustomizeController{
                 (disphair1b).setVisible(false);
                 (disphair2a).setVisible(false);
                 (disphair2b).setVisible(false);
-            } else if (sourceButton == hair1a) {
-                (disphair1a).setVisible(false);
-                (disphair1b).setVisible(true);
-                (disphair2a).setVisible(false);
-                (disphair2b).setVisible(false);
-            } else if (sourceButton == hair2a) { 
-                (disphair1a).setVisible(false);
-                (disphair1b).setVisible(false);
-                (disphair2a).setVisible(true);
-                (disphair2b).setVisible(false);
-            } else if (sourceButton == hair2b) { 
-                (disphair1b).setVisible(true);
-                (disphair2a).setVisible(false);
-                (disphair2b).setVisible(false);
+            // } else if (sourceButton == hair1a) {
+            //     (disphair1a).setVisible(false);
+            //     (disphair1b).setVisible(true);
+            //     (disphair2a).setVisible(false);
+            //     (disphair2b).setVisible(false);
+            // } else if (sourceButton == hair2a) { 
+            //     (disphair1a).setVisible(false);
+            //     (disphair1b).setVisible(false);
+            //     (disphair2a).setVisible(true);
+            //     (disphair2b).setVisible(false);
+            // } else if (sourceButton == hair2b) { 
+            //     (disphair1b).setVisible(true);
+            //     (disphair2a).setVisible(false);
+            //     (disphair2b).setVisible(false);
             }
         }
 
