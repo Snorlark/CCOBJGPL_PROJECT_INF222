@@ -175,14 +175,14 @@
             <Image url="@images/p9.png" />
          </image>
       </ImageView>
-      <Button fx:id="v1" layoutX="73.0" layoutY="182.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v2" layoutX="270.0" layoutY="182.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v3" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v4" layoutX="665.0" layoutY="182.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button layoutX="861.0" layoutY="182.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v5" layoutX="664.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v8" layoutX="468.0" layoutY="408.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v7" layoutX="272.0" layoutY="411.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v6" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v1" layoutX="74.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v2" layoutX="270.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v3" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v4" layoutX="665.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v5" layoutX="861.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v9" layoutX="664.0" layoutY="409.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v8" layoutX="468.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v7" layoutX="272.0" layoutY="411.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v6" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
    </children>
 </AnchorPane>

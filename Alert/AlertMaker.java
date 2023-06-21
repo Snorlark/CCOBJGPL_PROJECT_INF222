@@ -46,7 +46,7 @@ public class AlertMaker {
 
     public static void showInstructionsAlert(String title, String content) {
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("FILODROID");
+        alert.setTitle("FILODROIDS");
         alert.setHeaderText(title);
         alert.setContentText(content);
         alert.showAndWait();
@@ -54,7 +54,7 @@ public class AlertMaker {
 
     public static void showAboutAlert(String title, String content) {
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("FILODROID");
+        alert.setTitle("FILODROIDS");
         alert.setHeaderText(title);
         alert.setContentText(content);
         alert.showAndWait();

@@ -136,7 +136,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane layoutX="987.0" layoutY="150.0" prefHeight="31.0" prefWidth="38.0">
+      <Pane layoutX="987.0" layoutY="150.0" onDragDetected="#showAbout" prefHeight="31.0" prefWidth="38.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Alert.AlertMaker;
 import Home.HomeController;
 import Login_Signup.RegisterController;
 import Login_Signup.SignupController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -161,6 +163,18 @@ public class SettingsController implements Initializable{
         stage.setScene(scene);
         stage.centerOnScreen();
         stage.show();
+
+    }
+
+    public void showInstruct(ActionEvent event) throws IOException { 
+         AlertMaker.showInstructionsAlert("MABUHAY! :D", "Filodroids Company is a local Filipino company that manufactures and sells hobby products such as \nfigures. We handle everything from designing and making the products to marketing and distributing \nthem. Our unique creations are inspired by different generations of Filipino themes and culture.");
+
+    }
+
+    public void showAbout(ActionEvent event) throws IOException { 
+         AlertMaker.showAboutAlert("About us", 
+         
+         "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
 
     }
 

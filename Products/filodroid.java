@@ -6,6 +6,7 @@ public class filodroid {
     private double productPrice;
     private String productImage;
     private boolean productStatus = false;
+    private boolean productViewStatus = false;
     private double qty;
 
 
@@ -47,6 +48,14 @@ public class filodroid {
 
     public void setProductQuantity(double quantity) {
         this.qty = quantity;
+    }
+
+    public boolean getProductViewStatus() {
+        return this.productViewStatus;
+    }
+
+    public void setProductViewStatus(boolean status) {
+        this.productViewStatus = status;
     }
 
 }
