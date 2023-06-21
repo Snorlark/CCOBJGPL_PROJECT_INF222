@@ -22,31 +22,24 @@ import javafx.stage.Stage;
 public class CustomizeController{
 
     @FXML //customization buttons
-    private Button btnskin, btneye, btnmouth, btnhair, btn_outfit;
-    
+    private Button btnskin, btneye, btnbrow, btnmouth, btnhair, btn_outfit;
     @FXML //selection panes
     private Pane selectionhair;
 
-    @FXML //image selections
-    private Button hair1a,hair1b,hair2a,hair2b;
+    // @FXML //image selections
+    private Button hair1a, hair1b, hair2a, hair2b;
+    
 
     @FXML //selection panes
-    private Pane disphair1a, disphair1b, disphair2a, disphair2b;
-
-    // @FXML
-    // private ImageView openEyes;
-
-    // @FXML
-    // private Rectangle openRectangle;
-
-    // @FXML
-    // private Label usernameLabel;
+    private ImageView temp, disphair1a, disphair1b, disphair2a, disphair2b;
 
 
     public void login (ActionEvent event) throws IOException {
 
         Button sourceButton = (Button) event.getSource();
         
+        (temp).setVisible(false);
+
         if (sourceButton == btnhair) {
             selectionhair.setVisible(true);
             if (sourceButton == hair1a) { 
@@ -54,20 +47,20 @@ public class CustomizeController{
                 (disphair1b).setVisible(false);
                 (disphair2a).setVisible(false);
                 (disphair2b).setVisible(false);
-            // } else if (sourceButton == hair1a) {
-            //     (disphair1a).setVisible(false);
-            //     (disphair1b).setVisible(true);
-            //     (disphair2a).setVisible(false);
-            //     (disphair2b).setVisible(false);
-            // } else if (sourceButton == hair2a) { 
-            //     (disphair1a).setVisible(false);
-            //     (disphair1b).setVisible(false);
-            //     (disphair2a).setVisible(true);
-            //     (disphair2b).setVisible(false);
-            // } else if (sourceButton == hair2b) { 
-            //     (disphair1b).setVisible(true);
-            //     (disphair2a).setVisible(false);
-            //     (disphair2b).setVisible(false);
+            } else if (sourceButton == hair1b) {
+                (disphair1a).setVisible(false);
+                (disphair1b).setVisible(true);
+                (disphair2a).setVisible(false);
+                (disphair2b).setVisible(false);
+            } else if (sourceButton == hair2a) { 
+                (disphair1a).setVisible(false);
+                (disphair1b).setVisible(false);
+                (disphair2a).setVisible(true);
+                (disphair2b).setVisible(false);
+            } else if (sourceButton == hair2b) { 
+                (disphair1b).setVisible(true);
+                (disphair2a).setVisible(false);
+                (disphair2b).setVisible(false);
             }
         }
 
@@ -78,4 +71,3 @@ public class CustomizeController{
     
     
 }
-
