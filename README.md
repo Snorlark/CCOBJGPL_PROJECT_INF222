@@ -1,4 +1,29 @@
-# CCOBJGPL_PROJECT_INF222
+**Product Name: Filodroids**
 
-Group 5
 
+**FEATURES:**
+
+• Login
+  - Log in page
+  - Sign up page
+
+• Home
+  - Products
+  - About
+  - Instructions
+
+• Settings
+  - User Edit and Logout
+  
+• Products Selection
+  - pre-designed filodroids
+  - customization filodroids
+  
+• Checkout
+  - Mode of payment: Online payment or Cash on Delivery
+  - Details about the user (name, address, postal code, contact no., email add.)
+  - Message
+  
+• Receipt
+  - Receipt
+  - Can go back to Home Page
