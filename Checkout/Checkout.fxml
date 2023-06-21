@@ -36,21 +36,16 @@
             <Font name="Candara Bold Italic" size="20.0" />
          </font>
       </Text>
-      <Text fill="#ce1126" layoutX="902.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 396.00" textAlignment="RIGHT" wrappingWidth="83.47004699707031">
-         <font>
-            <Font name="Candara Bold Italic" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#ce1126" layoutX="901.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 50.00" textAlignment="RIGHT" wrappingWidth="83.47004699707031">
-         <font>
-            <Font name="Candara Bold Italic" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#ce1126" layoutX="845.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 396.00" textAlignment="RIGHT" wrappingWidth="140.60253524780273">
+      <Label fx:id="totalpayment" layoutX="884.0" layoutY="495.0" text="₱ 396.00" textFill="#ce1126">
          <font>
             <Font name="Candara Bold Italic" size="28.0" />
          </font>
-      </Text>
+      </Label>
+      <Label fx:id="prodtotal" layoutX="915.0" layoutY="412.0" text="₱ 396.00" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font>
+      </Label>
       <Button fx:id="cart" layoutX="1072.0" layoutY="115.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -71,13 +66,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fitHeight="121.0" fitWidth="279.0" layoutX="633.0" layoutY="252.0">
-         <image>
-            <Image url="@../../../../../../../Downloads/mop.png" />
-         </image>
-      </ImageView>
-      <ChoiceBox fx:id="modeofpayment" layoutX="669.0" layoutY="311.0" onMouseClicked="#initialize" prefHeight="26.0" prefWidth="209.0" />
-      <ScrollPane layoutX="62.0" layoutY="327.0" prefHeight="291.0" prefWidth="574.0">
+      <ChoiceBox fx:id="modeofpayment" layoutX="660.0" layoutY="314.0" onMouseClicked="#initialize" prefHeight="26.0" prefWidth="232.0" />
+      <ScrollPane layoutX="59.0" layoutY="315.0" prefHeight="304.0" prefWidth="574.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="835.0" prefWidth="559.0">
                <children>
@@ -89,12 +79,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item1" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price1" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -111,12 +101,12 @@
                         <Image url="@../../../../../../../Downloads/ordered.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="174.0" layoutY="123.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                  <Label fx:id="item2" layoutX="174.0" layoutY="123.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                      <font>
                         <Font name="Candara Bold Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="330.0" layoutY="121.0" text="99.00" textFill="#ce1126">
+                  <Label fx:id="price2" layoutX="330.0" layoutY="121.0" text="99.00" textFill="#ce1126">
                      <font>
                         <Font name="Candara Bold Italic" size="18.0" />
                      </font>
@@ -133,7 +123,7 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item3" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -157,12 +147,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item4" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price4" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -181,12 +171,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item5" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price5" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -205,12 +195,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item6" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price6" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -229,12 +219,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item7" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price7" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -253,12 +243,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item9" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price9" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -277,12 +267,12 @@
                               <Image url="@../../../../../../../Downloads/ordered.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                        <Label fx:id="item8" layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                        <Label fx:id="price8" layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
                            <font>
                               <Font name="Candara Bold Italic" size="18.0" />
                            </font>
@@ -298,5 +288,10 @@
             </AnchorPane>
         </content>
       </ScrollPane>
+      <Label fx:id="shippingtotal" layoutX="925.0" layoutY="457.0" text="₱ 50.00" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
