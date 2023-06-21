@@ -1,95 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products.Customization.CustomProductController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products.Customize.CustomizeController">
    <children>
-      <ImageView fitHeight="585.0" fitWidth="1040.0" opacity="0.47">
+      <ImageView fitHeight="693.0" fitWidth="1147.0">
          <image>
-            <Image url="@images/FFCBCB%209EA1D4%20F1F7B5%20A8D1D1%20DFEBEB/body%20features%20(%20skin%20).png" />
+            <Image url="@images/Customize.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="492.0" layoutX="182.0" layoutY="47.0" opacity="0.47" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="492.0" />
-      <ImageView fitHeight="492.0" fitWidth="492.0" layoutX="290.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/skin1.png" />
-         </image>
-      </ImageView>
-      <Pane layoutX="674.0" layoutY="47.0" prefHeight="492.0" prefWidth="277.0">
+      <Pane fx:id="selectionSkin" layoutX="694.0" layoutY="166.0" prefHeight="418.0" prefWidth="183.0" visible="false">
          <children>
-            <Button fx:id="buttonskin" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="Skin" textAlignment="CENTER">
-               <font>
-                  <Font name="Candara Bold" size="12.0" />
-               </font></Button>
-            <Button fx:id="buttoneye" layoutX="59.0" layoutY="14.0" mnemonicParsing="false" text="Eye" />
-            <Button fx:id="buttonbrow" layoutX="112.0" layoutY="14.0" mnemonicParsing="false" text="Brow" />
-            <Button fx:id="buttonmouth" layoutX="165.0" layoutY="14.0" mnemonicParsing="false" text="Mouth" />
-            <Button fx:id="buttonhair" layoutX="218.0" layoutY="14.0" mnemonicParsing="false" text="Hair" />
-            <Button fx:id="buttontop" layoutX="6.0" layoutY="44.0" mnemonicParsing="false" text="Top" />
-            <Button fx:id="buttonbottom" layoutX="59.0" layoutY="44.0" mnemonicParsing="false" text="Bottom" />
-            <Button fx:id="buttonshoe" layoutX="112.0" layoutY="44.0" mnemonicParsing="false" text="Shoe" />
-            <Button fx:id="buttonaccessory" layoutX="165.0" layoutY="44.0" mnemonicParsing="false" text="Accessory" />
-            <Pane fx:id="selectionhair" layoutX="6.0" layoutY="74.0" prefHeight="411.0" prefWidth="265.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffee8f" height="411.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="265.0" />
-                  <Pane fx:id="hair1a" layoutX="14.0" layoutY="14.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="111.0" />
-                        <ImageView fitHeight="195.0" fitWidth="111.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@images/hair1a.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="hair1b" layoutX="140.0" layoutY="14.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="111.0" />
-                        <ImageView fitHeight="216.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@images/hair1b.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="hair2a" layoutX="14.0" layoutY="139.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="111.0" />
-                        <ImageView fitHeight="169.0" fitWidth="111.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@images/hair2a.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="hair2b" layoutX="140.0" layoutY="139.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="111.0" />
-                        <ImageView fitHeight="169.0" fitWidth="111.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@images/hair2b.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-               </children>
-            </Pane>
+            <ToggleButton fx:id="btn1" mnemonicParsing="false" prefHeight="74.0" prefWidth="86.0">
+               <graphic>
+                  <ImageView fx:id="skin1" fitHeight="111.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/skin1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="skinSelect" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btn2" layoutX="97.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="86.0" toggleGroup="$skinSelect">
+               <graphic>
+                  <ImageView fx:id="skin2" fitHeight="111.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/skin2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="btn3" layoutX="97.0" layoutY="143.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="86.0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggle2" />
+               </toggleGroup>
+               <graphic>
+                  <ImageView fx:id="skin3" fitHeight="111.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/skin3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="btn4" layoutY="143.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="86.0" toggleGroup="$skinSelect">
+               <graphic>
+                  <ImageView fx:id="skin4" fitHeight="111.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/skin4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
          </children>
       </Pane>
-      <Pane layoutX="182.0" layoutY="47.0" prefHeight="492.0" prefWidth="492.0">
+      <Pane fx:id="base" layoutX="349.0" layoutY="91.0">
          <children>
-            <ImageView fx:id="displayedhair1a" fitHeight="492.0" fitWidth="492.0" layoutX="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="skin1" fitHeight="492.0" fitWidth="492.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/hair1a.png" />
+                  <Image url="@images/skin1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eye3a" fitHeight="492.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/eye3a.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="brow1" fitHeight="492.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/mouth1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mouth1" fitHeight="150.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="skinGrp" layoutX="349.0" layoutY="91.0" visible="false">
+         <children>
+            <ImageView fx:id="skin1" fitHeight="492.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/skin1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin2" fitHeight="492.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/skin2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin3" fitHeight="492.0" fitWidth="492.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/skin3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin4" fitHeight="492.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/skin4.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
+      <Pane fx:id="selectionColor" layoutX="942.0" layoutY="85.0" rotate="-90.0">
+         <children>
+            <Circle centerX="15.0" centerY="15.0" fill="#383838" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle centerX="15.0" centerY="15.0" fill="#917769" layoutY="50.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <RadioButton fx:id="black" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" selected="true">
+               <toggleGroup>
+                  <ToggleGroup fx:id="colorSelect" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="brown" layoutX="7.0" layoutY="56.0" mnemonicParsing="false" toggleGroup="$colorSelect" />
+         </children>
+      </Pane>
+      <VBox layoutX="891.0" layoutY="157.0" opacity="0.48" prefHeight="436.0" prefWidth="132.0">
+         <children>
+            <Button fx:id="btnhair" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="hair" />
+            <Button fx:id="btnbrow" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="brows" />
+            <Button fx:id="btneye" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="eyes" />
+            <Button fx:id="btnmouth" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="mouth" />
+            <Button fx:id="btnskin" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="skin" />
+            <Button fx:id="btnoutfit" mnemonicParsing="false" onMouseClicked="#dispSkins" prefHeight="74.0" prefWidth="153.0" text="outfit" />
+         </children>
+      </VBox>
+      <Button fx:id="btn1" layoutX="688.0" layoutY="166.0" mnemonicParsing="false" opacity="0.48" prefHeight="90.0" prefWidth="90.0" text="Button" />
+      <Button fx:id="btn2" layoutX="784.0" layoutY="166.0" mnemonicParsing="false" opacity="0.48" prefHeight="90.0" prefWidth="90.0" text="Button" />
+      <Button fx:id="btn3" layoutX="688.0" layoutY="275.0" mnemonicParsing="false" opacity="0.48" prefHeight="90.0" prefWidth="90.0" text="Button" />
+      <Button fx:id="btn4" layoutX="786.0" layoutY="275.0" mnemonicParsing="false" opacity="0.48" prefHeight="90.0" prefWidth="90.0" text="Button" />
    </children>
 </AnchorPane>
