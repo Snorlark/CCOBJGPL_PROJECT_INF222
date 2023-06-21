@@ -1,10 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products.ProductselectController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Checkout.CheckoutController">
    <children>
-      <Label layoutX="280.0" layoutY="208.0" text="checkout" />
+      <ImageView fitHeight="652.0" fitWidth="1157.0" layoutX="-5.0" layoutY="-2.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/checkout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="placeorder" blendMode="COLOR_BURN" layoutX="738.0" layoutY="572.0" mnemonicParsing="false" onAction="#gotoReceipt" prefHeight="41.0" prefWidth="214.0" />
+      <Text fx:id="nameDisplay" fill="#ce1126" layoutX="109.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juan Dela Cruz" wrappingWidth="155.4700469970703">
+         <font>
+            <Font name="Candara Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="contactNoDisplay" fill="#ce1126" layoutX="347.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09458603740" wrappingWidth="155.4700469970703">
+         <font>
+            <Font name="Candara Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="addressDisplay" fill="#ce1126" layoutX="561.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234 P. Noval St., Barangay 10, Sampaloc, Manila, Philippines, 1800" wrappingWidth="456.80335998535156">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#ce1126" layoutX="902.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 396.00" textAlignment="RIGHT" wrappingWidth="83.47004699707031">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ce1126" layoutX="901.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 50.00" textAlignment="RIGHT" wrappingWidth="83.47004699707031">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ce1126" layoutX="845.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="₱ 396.00" textAlignment="RIGHT" wrappingWidth="140.60253524780273">
+         <font>
+            <Font name="Candara Bold Italic" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="cart" layoutX="1072.0" layoutY="115.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="userprofile" layoutX="1072.0" layoutY="68.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="instuctions" layoutX="45.0" layoutY="72.0" mnemonicParsing="false" onAction="#goBack" opacity="0.0" prefHeight="26.0" prefWidth="26.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="about" layoutX="1070.0" layoutY="227.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="121.0" fitWidth="279.0" layoutX="633.0" layoutY="252.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/mop.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="modeofpayment" layoutX="669.0" layoutY="311.0" onMouseClicked="#initialize" prefHeight="26.0" prefWidth="209.0" />
+      <ScrollPane layoutX="62.0" layoutY="327.0" prefHeight="291.0" prefWidth="574.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="835.0" prefWidth="559.0">
+               <children>
+                  <ScrollBar blendMode="OVERLAY" layoutX="7.0" layoutY="17.0" orientation="VERTICAL" />
+                  <Pane layoutX="16.0" layoutY="10.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-13.0" layoutY="71.0">
+                     <image>
+                        <Image url="@../../../../../../../Downloads/ordered.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="174.0" layoutY="123.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                     <font>
+                        <Font name="Candara Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="330.0" layoutY="121.0" text="99.00" textFill="#ce1126">
+                     <font>
+                        <Font name="Candara Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="455.0" layoutY="121.0" text="x1" textFill="#ce1126">
+                     <font>
+                        <Font name="Candara Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="18.0" layoutY="184.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="18.0" layoutY="270.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="355.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-32.0" layoutY="-26.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="440.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-29.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="524.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="695.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="611.0" prefHeight="79.0" prefWidth="527.0">
+                     <children>
+                        <ImageView fitHeight="128.0" fitWidth="580.0" layoutX="-30.0" layoutY="-25.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/ordered.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="157.0" layoutY="27.0" prefHeight="18.0" prefWidth="88.0" text="ITEM NAME" textFill="#294295">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="313.0" layoutY="25.0" text="99.00" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="25.0" text="x1" textFill="#ce1126">
+                           <font>
+                              <Font name="Candara Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>
