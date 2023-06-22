@@ -218,8 +218,8 @@ public class ProductController implements Initializable {
         }
 
         // Clears all items in Checkout.fxml
-        ProductController.cartController = loader.getController();
-        ProductController.cartController.myVBox.getChildren().removeAll(ProductController.cartController.myVBox.getChildren());
+        cartController = loader.getController();
+        cartController.myVBox.getChildren().removeAll(ProductController.cartController.myVBox.getChildren());
         
     }
         

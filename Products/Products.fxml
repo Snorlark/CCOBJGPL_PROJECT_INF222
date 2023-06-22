@@ -139,7 +139,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="p9" layoutX="739.0" layoutY="563.0" mnemonicParsing="false" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+      <Button fx:id="p9" layoutX="739.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
