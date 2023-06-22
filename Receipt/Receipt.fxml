@@ -134,11 +134,6 @@
             <Font name="Monospaced Regular" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="53.0" layoutY="709.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for shopping. Please come again.">
-         <font>
-            <Font name="Monospaced Regular" size="12.0" />
-         </font>
-      </Text>
       <Text layoutX="38.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="==============================================">
          <font>
             <Font name="Monospaced Regular" size="12.0" />
@@ -164,7 +159,10 @@
             <Font name="Monospaced Regular" size="12.0" />
          </font>
       </Text>
-      <Button layoutX="186.0" layoutY="669.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="gohome" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="&lt; Go back to Home">
+         <font>
+            <Font name="Monospaced Bold" size="9.0" />
+         </font></Button>
       <Label fx:id="qty4" layoutX="32.0" layoutY="293.0" prefHeight="15.0" prefWidth="0.0" text="4">
          <font>
             <Font name="Monospaced Regular" size="12.0" />
@@ -285,7 +283,7 @@
             <Font name="Monospaced Regular" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="qty424" layoutX="319.0" layoutY="509.0" prefHeight="15.0" prefWidth="0.0" text="50">
+      <Label fx:id="qty424" layoutX="298.0" layoutY="508.0" prefHeight="15.0" prefWidth="51.0" text="₱50.00">
          <font>
             <Font name="Monospaced Regular" size="12.0" />
          </font>

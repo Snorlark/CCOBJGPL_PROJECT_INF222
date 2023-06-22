@@ -1,14 +1,26 @@
 package Receipt;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import Home.HomeController;
+import Products.CartController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import javafx.scene.Node;
 
 public class ReceiptController implements Initializable {
+
+    @FXML
+    Button gohome;
 
     @FXML
     double item1Amount, item2Amount, item3Amount, item4Amount, item5Amount, item6Amount, item7Amount, item8Amount, item9Amount;
@@ -164,8 +176,31 @@ public class ReceiptController implements Initializable {
             item9Amount = HomeController.product9.getProductPrice() * HomeController.product9.getProductQuantity();
 
         }
-        double final_amount = item1Amount + item2Amount + item3Amount + item4Amount + item5Amount + item6Amount + item7Amount + item8Amount + item9Amount;
+        double final_amount = item1Amount + item2Amount + item3Amount + item4Amount + item5Amount + item6Amount + item7Amount + item8Amount + item9Amount + 50;
         total.setText(Double.toString(final_amount));
+
+    }
+    public void goBack(ActionEvent event) throws IOException {
+
+        if (CartController.cartGoBackCount == 1) {
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Home/Home.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.centerOnScreen();
+            stage.show();
+        }
+        
+        else if (CartController.cartGoBackCount == 2) {
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Products/Products.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.centerOnScreen();
+            stage.show();
+        }
 
     }
 }
