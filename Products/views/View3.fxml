@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products.views.View3Controller">
+   <children>
+      <ImageView fitHeight="643.0" fitWidth="1147.0">
+         <image>
+            <Image url="@../images/productview.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="47.0" layoutY="68.0" mnemonicParsing="false" onAction="#gotoProductselect" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="71.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="165.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="548.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane fx:id="pane3" layoutX="53.0" layoutY="165.0" prefHeight="457.0" prefWidth="923.0">
+         <children>
+            <Button fx:id="p3" layoutX="698.0" layoutY="316.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="54.0" prefWidth="197.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="item3" layoutX="14.0" layoutY="103.0" prefHeight="34.0" prefWidth="198.0" text="ITEM NAME 1" textFill="#ce1126">
+               <font>
+                  <Font name="Candara Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="price3" layoutX="14.0" layoutY="150.0" prefHeight="26.0" prefWidth="113.0" text="₱ 250.00" textFill="#0038a8">
+               <font>
+                  <Font name="Candara Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img3" fitHeight="340.0" fitWidth="190.0" layoutX="339.0" layoutY="42.0">
+               <image>
+                  <Image url="@../../Home/images/p8.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="TOP_LEFT" layoutX="682.0" layoutY="238.0" prefHeight="272.0" prefWidth="389.0" text="The Katipunero's outfit is a historical attire worn by men during the Philippine Revolution against Spanish colonial rule. It typically includes a camisa de chino (Chinese-style shirt), red bandana, and wide-legged pants known as pantalon. The ensemble symbolizes the spirit of resistance and patriotism, reflecting the bravery and determination of the Katipuneros. With its distinctive style and significance, the Katipunero's outfit is a testament to the country's fight for independence and the enduring legacy of its heroes." textAlignment="JUSTIFY" textFill="#64412a" wrapText="true">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
