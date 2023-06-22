@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Settings.SettingsController">
+   <children>
+      <ImageView fitHeight="643.0" fitWidth="1147.0">
+         <image>
+            <Image url="@images/user%20page.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="251.0" layoutY="316.0" text="Lark Babao" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="contactNoLabel" layoutX="251.0" layoutY="378.0" text="09983947259" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="addressLabel" alignment="TOP_LEFT" layoutX="251.0" layoutY="435.0" prefHeight="43.0" prefWidth="311.0" text="Lark Babao" textAlignment="JUSTIFY" textFill="#ce1126" wrapText="true">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="524.0" layoutY="316.0" text="Lark Babao" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdayLabel" layoutX="525.0" layoutY="378.0" text="Lark Babao" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="332.0" layoutY="203.0" text="\@LARK" textFill="#294295">
+         <font>
+            <Font name="Candara Bold Italic" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="2.0" offsetX="1.0" offsetY="1.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" opacity="0.7595419883728027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <AnchorPane fx:id="userEditPane" prefHeight="643.0" prefWidth="1147.0" visible="false">
+         <children>
+            <ImageView fitHeight="643.0" fitWidth="1147.0">
+               <image>
+                  <Image url="@images/user%20page%20edit.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nameTextField" layoutX="238.0" layoutY="309.0" prefHeight="32.0" prefWidth="233.0" style="-fx-background-color: #FFFEF1;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara Italic" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="contactNoTextField" layoutX="238.0" layoutY="372.0" prefHeight="32.0" prefWidth="233.0" style="-fx-background-color: #FFFEF1;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addressTextField" alignment="TOP_LEFT" layoutX="239.0" layoutY="429.0" prefHeight="59.0" prefWidth="332.0" style="-fx-background-color: #FFFEF1;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailTextField" layoutX="512.0" layoutY="309.0" prefHeight="32.0" prefWidth="233.0" style="-fx-background-color: #FFFEF1;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="birthdayTextField" layoutX="512.0" layoutY="371.0" prefHeight="32.0" prefWidth="160.0" style="-fx-background-color: #FFFEF1;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Candara Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="usernameLabel1" layoutX="332.0" layoutY="203.0" text="\@LARK" textFill="#294295">
+               <font>
+                  <Font name="Candara Bold Italic" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" height="2.0" offsetX="1.0" offsetY="1.0" radius="0.5" width="2.0">
+                     <color>
+                        <Color red="1.0" opacity="0.6800000071525574" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Pane layoutX="758.0" layoutY="261.0" onMousePressed="#editDone" prefHeight="31.0" prefWidth="31.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="editButton" layoutX="758.0" layoutY="259.0" onMousePressed="#userEdit" prefHeight="31.0" prefWidth="38.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="123.0" layoutY="109.0" onDragDetected="#goBack" onMousePressed="#goBack" prefHeight="31.0" prefWidth="38.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="987.0" layoutY="150.0" onMousePressed="#showAbout" prefHeight="31.0" prefWidth="38.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="127.0" layoutY="527.0" onMousePressed="#logout" prefHeight="44.0" prefWidth="104.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <ImageView fitHeight="74.0" fitWidth="127.0" layoutX="941.0" layoutY="80.0">
+         <image>
+            <Image url="@../Login_Signup/images/filodroid_character.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

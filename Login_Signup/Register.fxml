@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f3e4d9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login_Signup.RegisterController">
+   <children>
+      <ImageView fitHeight="237.0" fitWidth="455.0" layoutX="24.0" layoutY="120.0">
+         <image>
+            <Image url="@images/box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="268.0" layoutX="5.0" layoutY="-41.0">
+         <image>
+            <Image url="@images/bandaritas.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mabuhayLabel" layoutX="50.0" layoutY="29.0" prefHeight="77.0" prefWidth="546.0" text="Mabuhay" textFill="#e80000">
+         <font>
+            <Font name="Candara Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="88.0" text="Help us get to know you better!" textFill="#000000ae">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#365e89" height="13.0" layoutX="-297.0" layoutY="80.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
+      <TextField fx:id="firstNameField" layoutX="74.0" layoutY="150.0" prefHeight="32.0" prefWidth="163.0" promptText="First Name" style="-fx-background-color: WHITE;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailField" layoutX="74.0" layoutY="250.0" prefHeight="32.0" prefWidth="163.0" promptText="Email" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="contactNoField" layoutX="271.0" layoutY="150.0" prefHeight="32.0" prefWidth="163.0" promptText="Contact Number" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressField" layoutX="271.0" layoutY="250.0" prefHeight="32.0" prefWidth="163.0" promptText="Address" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameField" layoutX="74.0" layoutY="200.0" prefHeight="32.0" prefWidth="163.0" promptText="Last Name" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="checkBoxField" layoutX="74.0" layoutY="299.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="227.0" text="I read and agree to" textFill="#000000ad">
+         <font>
+            <Font name="Candara" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Label layoutX="96.0" layoutY="313.0" text="and" textFill="#000000ad">
+         <font>
+            <Font name="Candara" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="301.0" onMousePressed="#openTermsConditions" text="Terms &amp; Conditions" textFill="RED" underline="true">
+         <font>
+            <Font name="Candara Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="117.0" layoutY="313.0" onMousePressed="#openPrivacyPolicy" text="Privacy Policy" textFill="RED" underline="true">
+         <font>
+            <Font name="Candara Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="228.0" fitWidth="375.0" layoutX="351.0" layoutY="176.0" rotate="-7.1">
+         <image>
+            <Image url="@images/filodroid_character2.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="357.0" layoutY="301.0" mnemonicParsing="false" onAction="#Register" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #E7CDB3;" text="Sign Up" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#deae49" height="13.0" layoutX="-4.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
+      <ImageView fitHeight="150.0" fitWidth="268.0" layoutX="266.0" layoutY="-41.0">
+         <image>
+            <Image url="@images/bandaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="268.0" layoutX="527.0" layoutY="-41.0">
+         <image>
+            <Image url="@images/bandaritas.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81362d" height="13.0" layoutX="294.0" layoutY="80.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0" />
+      <ImageView fitHeight="50.0" fitWidth="80.0" layoutX="479.0" layoutY="43.0">
+         <image>
+            <Image url="@../filodroids.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="birthdayField" layoutX="271.0" layoutY="200.0" prefHeight="32.0" prefWidth="163.0" promptText="Birthday" style="-fx-background-color: #fff7ef;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Rectangle fx:id="black_opacity" arcHeight="5.0" arcWidth="5.0" fill="#00000081" height="411.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="603.0" />
+      <AnchorPane fx:id="terms_conditions" layoutX="188.0" layoutY="80.0" onMouseExited="#closeTermsConditions" prefHeight="273.0" prefWidth="219.0" style="-fx-background-color: #fff7ef;" visible="false">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <children>
+            <Label layoutX="34.0" layoutY="20.0" text="Terms &amp; Conditions" textFill="RED">
+               <font>
+                  <Font name="Candara Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="55.0" prefHeight="204.0" prefWidth="180.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis magna quis purus ullamcorper, vulputate aliquam ante ornare. Nam non tristique enim, convallis lobortis mauris. Quisque iaculis porta tortor sed eleifend. Aenean ultrices felis eu neque volutpat, quis consectetur nisl eleifend. Donec suscipit urna purus, a malesuada ex vulputate ac. Suspendisse non convallis dui, et blandit risus. Praesent ornare congue cursus. Curabitur vehicula sed arcu at fermentum. Nunc enim libero, consequat et imperdiet vel, sagittis eu risus. Suspendisse vel urna tortor. Etiam vehicula lacus sit amet justo posuere, non varius diam mollis. In eget justo ut nibh porttitor interdum id in nulla. Praesent aliquet et turpis eu eleifend.Pellentesque turpis est, porta sit amet ex eget, aliquam elementum orci. Nullam massa ante, efficitur et blandit a, elementum vitae neque. Duis posuere commodo efficitur. Morbi hendrerit sed felis at pharetra. Etiam eros nisi, pellentesque id pulvinar efficitur, laoreet a ante. Phasellus quis facilisis mi, at vehicula diam. Maecenas pretium massa sit amet est imperdiet malesuada. Pellentesque in orci tortor. In sit amet bibendum arcu. Donec posuere diam ac blandit tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; " textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Candara" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="privacy_policy" layoutX="188.0" layoutY="80.0" onMouseExited="#closePrivacyPolicy" prefHeight="273.0" prefWidth="219.0" style="-fx-background-color: #fff7ef;" visible="false">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <children>
+            <Label layoutX="54.0" layoutY="20.0" text="Privacy Policy" textFill="RED">
+               <font>
+                  <Font name="Candara Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="55.0" prefHeight="204.0" prefWidth="180.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis magna quis purus ullamcorper, vulputate aliquam ante ornare. Nam non tristique enim, convallis lobortis mauris. Quisque iaculis porta tortor sed eleifend. Aenean ultrices felis eu neque volutpat, quis consectetur nisl eleifend. Donec suscipit urna purus, a malesuada ex vulputate ac. Suspendisse non convallis dui, et blandit risus. Praesent ornare congue cursus. Curabitur vehicula sed arcu at fermentum. Nunc enim libero, consequat et imperdiet vel, sagittis eu risus. Suspendisse vel urna tortor. Etiam vehicula lacus sit amet justo posuere, non varius diam mollis. In eget justo ut nibh porttitor interdum id in nulla. Praesent aliquet et turpis eu eleifend.Pellentesque turpis est, porta sit amet ex eget, aliquam elementum orci. Nullam massa ante, efficitur et blandit a, elementum vitae neque. Duis posuere commodo efficitur. Morbi hendrerit sed felis at pharetra. Etiam eros nisi, pellentesque id pulvinar efficitur, laoreet a ante. Phasellus quis facilisis mi, at vehicula diam. Maecenas pretium massa sit amet est imperdiet malesuada. Pellentesque in orci tortor. In sit amet bibendum arcu. Donec posuere diam ac blandit tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; " textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Candara" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
