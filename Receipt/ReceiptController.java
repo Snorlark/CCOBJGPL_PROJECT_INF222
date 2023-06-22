@@ -16,11 +16,19 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 public class ReceiptController implements Initializable {
 
     @FXML
     Button gohome;
+
+    @FXML
+    Pane pane1, pane2, pane3, pane4 ,pane5, pane6, pane7, pane8, pane9;
+
+    @FXML
+    VBox myVbox;
 
     @FXML
     double item1Amount, item2Amount, item3Amount, item4Amount, item5Amount, item6Amount, item7Amount, item8Amount, item9Amount;
