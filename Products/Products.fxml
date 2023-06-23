@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products.ProductController">
+   <children>
+      <ImageView fitHeight="643.0" fitWidth="1147.0">
+         <image>
+            <Image url="@images/productselectionpage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="userprofile" layoutX="1068.0" layoutY="69.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="userprofile1" layoutX="46.0" layoutY="69.0" mnemonicParsing="false" onAction="#gotoHome" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="item1" layoutX="78.0" layoutY="298.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 1" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price1" layoutX="78.0" layoutY="320.0" prefHeight="26.0" prefWidth="113.0" text="₱ 250.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item2" layoutX="275.0" layoutY="298.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 2" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price2" layoutX="275.0" layoutY="320.0" prefHeight="26.0" prefWidth="113.0" text="₱ 200.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item3" layoutX="471.0" layoutY="298.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 3" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price3" layoutX="471.0" layoutY="320.0" prefHeight="26.0" prefWidth="113.0" text="₱ 300.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item4" layoutX="668.0" layoutY="298.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 4" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price4" layoutX="668.0" layoutY="320.0" prefHeight="26.0" prefWidth="113.0" text="₱ 280.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item5" layoutX="865.0" layoutY="297.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 5" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price5" layoutX="865.0" layoutY="319.0" prefHeight="26.0" prefWidth="113.0" text="₱ 100.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item6" layoutX="79.0" layoutY="525.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 6" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price6" layoutX="79.0" layoutY="547.0" prefHeight="26.0" prefWidth="113.0" text="₱ 250.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item7" layoutX="276.0" layoutY="525.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 7" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price7" layoutX="276.0" layoutY="547.0" prefHeight="26.0" prefWidth="113.0" text="₱ 250.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item8" layoutX="473.0" layoutY="525.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 8" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price8" layoutX="473.0" layoutY="547.0" prefHeight="26.0" prefWidth="113.0" text="₱ 250.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="item9" layoutX="669.0" layoutY="525.0" prefHeight="34.0" prefWidth="130.0" text="ITEM NAME 9" textFill="#ce1126">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price9" layoutX="669.0" layoutY="547.0" prefHeight="26.0" prefWidth="113.0" text="₱ 300.00" textFill="#0038a8">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="p1" layoutX="148.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p2" layoutX="345.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p3" layoutX="542.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p6" layoutX="149.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p7" layoutX="345.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p4" layoutX="738.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p9" layoutX="739.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="p8" layoutX="542.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="checkout" layoutX="874.0" layoutY="561.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="40.0" prefWidth="166.0" text="Button" />
+      <Button fx:id="p5" layoutX="936.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
+      <Button fx:id="userprofile" layoutX="1069.0" layoutY="70.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button" />
+      <Button layoutX="1068.0" layoutY="168.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="26.0" prefWidth="34.0" text="Button" />
+      <Button layoutX="1068.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Button layoutX="1068.0" layoutY="546.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Button fx:id="back" layoutX="47.0" layoutY="69.0" mnemonicParsing="false" onAction="#gotoHome" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <ImageView fx:id="img1" fitHeight="122.0" fitWidth="74.0" layoutX="108.0" layoutY="182.0">
+         <image>
+            <Image url="@images/p1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img2" fitHeight="122.0" fitWidth="74.0" layoutX="307.0" layoutY="182.0">
+         <image>
+            <Image url="@images/p2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="122.0" fitWidth="74.0" layoutX="504.0" layoutY="182.0">
+         <image>
+            <Image url="@images/p3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="122.0" fitWidth="74.0" layoutX="702.0" layoutY="182.0">
+         <image>
+            <Image url="@images/p4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="122.0" fitWidth="74.0" layoutX="899.0" layoutY="182.0">
+         <image>
+            <Image url="@images/p5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img6" fitHeight="122.0" fitWidth="74.0" layoutX="110.0" layoutY="411.0">
+         <image>
+            <Image url="@images/p6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img7" fitHeight="122.0" fitWidth="74.0" layoutX="308.0" layoutY="409.0">
+         <image>
+            <Image url="@images/p7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img8" fitHeight="122.0" fitWidth="74.0" layoutX="505.0" layoutY="409.0">
+         <image>
+            <Image url="@images/p8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img9" fitHeight="122.0" fitWidth="74.0" layoutX="702.0" layoutY="409.0">
+         <image>
+            <Image url="@images/p9.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="v1" layoutX="74.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v2" layoutX="270.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v3" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v4" layoutX="665.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v5" layoutX="861.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v9" layoutX="664.0" layoutY="409.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v8" layoutX="468.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v7" layoutX="272.0" layoutY="411.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="v6" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+   </children>
+</AnchorPane>
